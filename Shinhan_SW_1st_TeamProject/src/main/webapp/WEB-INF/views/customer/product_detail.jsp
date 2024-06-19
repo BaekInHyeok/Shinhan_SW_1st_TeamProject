@@ -50,31 +50,15 @@
 			}
 		});
 		
-		
-		//버튼 클릭 - 옵션 값 저장
-	 	function prodOption(){
-		   var param = $("#prodOptionFrom").serialize();
-		   //location.href : Get요청
-		   location.href= "${path}/customer/productOption?" + param;
-	  	}
-	 	
-		//장바구니 버튼 선택 시 나타나는 팝업창 
-		$('#cartButton').on('click', function() {
-			$('.popup-background').show();
-		});
-		//계속 쇼핑 선택시
-		$('.no-button').on('click', function() {
-			$('.popup-background').hide();
-		});
-		//계속 쇼핑 선택시
-		$('.yes-button').on('click', function() {
-			location.href= "${path}/cart/cart"; //장바구니 페이지 이동(수정중)
-		});
 	});
+
 </script>
+
 </head>
 <body>
 	<%@ include file="../common/header.jsp" %>
+	
+	<%-- 브랜치테스트 2 --%>
 	
 	<%-- 팝업 배경 --%>
 	<div class="popup-background" id="popupBackground">
@@ -124,20 +108,22 @@
 					<h1>NIKE</h1>
 					<h2>나이키 드라이핏 스우시 반팔티</h2>
 					<div class="price_wrap">
-						<p>
+						<p class="productPrice">
 							<del>100,000원</del>
 						</p>
 						<p>
-							<span class="discount">60%</span> 43,820원
+							<span class="discount">60%</span> 
+							<span class="discountPrice">40,000원</span>
 						</p>
 					</div>
 					<p class="rate">
 						★ 4.5 <span><a href="#void">리뷰 8건</a></span>
 					</p>
-					<div class="choose_wrap">
-						<p>선택</p>
-						<form id="prodOptionFrom">
+					<form id="prodOptionFrom">
+						<div class="choose_wrap">
+							<p>선택</p>
 							<div class="select_choose">
+								<%-- 카테고리 : 의류 > 상의 --%>
 								<select id="product-size" name="product-size">
 									<option value="0" selected="selected">선택</option>
 									<option value="L" selected>상의 (L)</option>
@@ -151,16 +137,18 @@
 									<option value="RED">색상 (GREEN)</option>
 								</select>
 							</div>
-						</form>
-					</div>
-					<div class="quantity-price">
-						<div class="quantity_wrap">
-							<p>수량 선택 :</p>
-							<input type="number" id="quantity" class="quantity"
-								name="quantity" value="1" min="1">
 						</div>
-						<p class="total">43,820원</p>
-					</div>
+						<div class="quantity-price">
+							<div class="quantity_wrap">
+								<p>수량 선택 :</p>
+								<input type="number" id="quantity" class="quantity"
+									name="quantity" value="1" min="1">
+							</div>
+							<p class="total">40,000원</p>
+						</div>
+						<%-- 단가 --%>
+						<input type="hidden" name="discountPrice" value="40000">
+					</form>
 					<div class="button-group">
 						<button id="cartButton" type="button" class="white_button" onclick="prodOption()">장바구니</button>
 						<button type="button" class="button">바로 구매</button>
@@ -360,5 +348,66 @@
 		</div>
 	</div>
 	<%@ include file="../common/footer.jsp" %>
+	<script>
+        $(document).ready(function() {
+            // 원래 가격 (숫자만 추출)
+            var originalPrice = parseInt($('.productPrice del').text().replace(/[^0-9]/g, ''));
+
+            // 할인율 (숫자만 추출)
+            var discountRate = parseInt($('.discount').text().replace(/[^0-9]/g, ''));
+
+            // 할인된 가격 계산 
+            var discountedPrice = originalPrice * (1 - discountRate / 100);
+
+            // 할인된 가격을 3자리 콤마 형식으로 업데이트 (예: 10,000원)
+            $('.discountPrice').text(discountedPrice.toLocaleString() + '원');
+
+            // 초기 총 가격 설정
+            $('.total').text(discountedPrice.toLocaleString() + '원');
+
+            var previousValue = parseInt($('.quantity').val());
+
+            // 수량 입력 필드가 변경될 때마다 실행
+            $('.quantity').on('input', function() {
+                var currentValue = parseInt($(this).val()); // 수량
+
+                if (currentValue < previousValue) {
+                    console.log('수량이 감소 : ' + currentValue);
+                } else {
+                    console.log('수량이 증가: ' + currentValue);
+                }
+
+                // previousValue를 현재 값으로 업데이트
+                previousValue = currentValue;
+
+                // 할인된 가격과 총 가격 업데이트 로직
+                var totalPrice = discountedPrice * currentValue;
+                $('.total').text(totalPrice.toLocaleString() + '원');
+            });
+    		
+    		//장바구니 버튼 선택 시 나타나는 팝업창 
+    		//$('#cartButton').on('click', function() {
+    		//	$('.popup-background').show();
+    		//});
+    		//계속 쇼핑 선택시
+    		//$('.no-button').on('click', function() {
+    		//	$('.popup-background').hide();
+    		//});
+    		//계속 쇼핑 선택시
+    		//$('.yes-button').on('click', function() {
+    		//	location.href= "${path}/cart/cart"; //장바구니 페이지 이동(수정중)
+    		//});
+    		
+        });
+    	
+		//버튼 클릭 -> 컨트롤러에 상품 옵션 값 저장
+		function prodOption(){
+		        
+	       //컨트롤러에 상품 옵션 값 보내기
+		   var param = $("#prodOptionFrom").serialize();
+		   //location.href : Get요청
+		   location.href= "${path}/customer/productOption?" + param;
+		}
+    </script>
 </body>
 </html>
