@@ -1,0 +1,538 @@
+{
+    "bagAndShoes": {
+        "manBag": {
+            "tote": {},
+            "clutch": {},
+            "shoulder": {},
+            "carrier": {},
+            "briefcase": {},
+            "echo": {},
+            "sling": {},
+            "backpack": {}
+        },
+        "womanPurse": {
+            "long": {},
+            "etc": {},
+            "mini": {},
+            "card": {},
+            "medium": {}
+        },
+        "womanShoes": {
+            "sandal": {},
+            "slipper": {},
+            "slipon": {},
+            "heel": {},
+            "walker": {},
+            "flat": {},
+            "sneakers": {},
+            "mountain": {}
+        },
+        "manShoes": {
+            "slipper": {},
+            "sandal": {},
+            "shoes": {},
+            "slipon": {},
+            "walker": {},
+            "sneakers": {},
+            "mountain": {}
+        },
+        "manPurse": {
+            "long": {},
+            "half": {},
+            "moneyclip": {},
+            "keyholder": {},
+            "card": {},
+            "medium": {}
+        },
+        "womanBag": {
+            "cross": {},
+            "tote": {},
+            "clutch": {},
+            "carrier": {},
+            "shopper": {},
+            "mini": {},
+            "echo": {},
+            "backpack": {}
+        }
+    },
+    "woman": {
+        "jacketAndVest": {
+            "jacket": {},
+            "blazer": {},
+            "vest": {},
+            "leatherJacket": {}
+        },
+        "jewelryAndWatch": {
+            "jewerly": {},
+            "watch": {},
+            "bracelet": {},
+            "brooch": {},
+            "hairAccessory": {},
+            "necklace": {},
+            "earing": {},
+            "ring": {}
+        },
+        "neat": {
+            "pullover": {},
+            "vest": {},
+            "cardigan": {}
+        },
+        "shirtAndBlouse": {
+            "shirt": {
+                "sleevelong": {},
+                "sleeveshort": {}
+            },
+            "blouse": {
+                "sleevelong": {},
+                "sleeveshort": {},
+                "sleeveless": {}
+            }
+        },
+        "outer": {
+            "padding": {},
+            "jumper": {
+                "windbreak": {},
+                "jumper": {},
+                "safari": {}
+            },
+            "fur": {},
+            "coat": {
+                "trench": {},
+                "fur": {},
+                "coat": {}
+            }
+        },
+        "tshirt": {
+            "sleevelong": {},
+            "sleeveshort": {},
+            "sleeveless": {}
+        },
+        "onepiece": {
+            "sleeveshort": {},
+            "sleevelong": {}
+        },
+        "skirt": {
+            "long": {},
+            "short": {}
+        },
+        "pants": {
+            "short": {},
+            "straight": {},
+            "slim": {},
+            "jogger": {},
+            "wide": {},
+            "jumpsuit": {},
+            "sport": {
+                "short": {},
+                "long": {}
+            },
+            "denim": {
+                "short": {},
+                "long": {}
+            }
+        }
+    },
+    "sports": {
+        "tennis": {
+            "man": {
+                "top": {},
+                "outer": {},
+                "pants": {}
+            },
+            "woman": {
+                "top": {},
+                "outer": {},
+                "pants": {}
+            },
+            "supplies": {
+                "accessory": {},
+                "bag": {},
+                "shoes": {},
+                "etc": {}
+            }
+        },
+        "swim": {
+            "man": {
+                "beachwearTop": {},
+                "indoors": {},
+                "beachwearBottom": {}
+            },
+            "woman": {
+                "beachwearTop": {},
+                "beachwearBottom": {},
+                "general": {},
+                "bikini": {}
+            },
+            "supplies": {
+                "accessory": {},
+                "swim": {},
+                "shoes": {}
+            }
+        },
+        "fitness": {
+            "man": {
+                "jacket": {},
+                "pants": {},
+                "tshirt": {},
+                "outer": {},
+                "hoodie": {}
+            },
+            "woman": {
+                "jacket": {},
+                "pants": {},
+                "tshirt": {},
+                "outer": {},
+                "hoodie": {}
+            },
+            "supplies": {
+                "accessory": {},
+                "shoes": {}
+            }
+        },
+        "running": {
+            "man": {
+                "jacket": {},
+                "pants": {},
+                "tshirt": {},
+                "outer": {},
+                "hoodie": {}
+            },
+            "woman": {
+                "jacket": {},
+                "pants": {},
+                "tshirt": {},
+                "outer": {},
+                "hoodie": {}
+            },
+            "cycle": {
+                "accessory": {},
+                "shoes": {}
+            },
+            "running": {
+                "accessory": {},
+                "shoes": {}
+            }
+        },
+        "outdoor": {
+            "man": {
+                "jacket": {},
+                "pants": {},
+                "tshirt": {},
+                "outer": {},
+                "hoodie": {}
+            },
+            "woman": {
+                "jacket": {},
+                "pants": {},
+                "tshirt": {},
+                "outer": {},
+                "hoodie": {}
+            },
+            "shoes": {
+                "hicking": {},
+                "walking": {},
+                "tracking": {}
+            },
+            "bag": {
+                "lifestyle": {},
+                "hicking": {}
+            },
+            "headgear": {}
+        },
+        "athleisure": {
+            "man": {
+                "top": {},
+                "outer": {},
+                "pants": {}
+            },
+            "woman": {
+                "top": {},
+                "outer": {},
+                "pants": {}
+            },
+            "supplies": {
+                "accessory": {},
+                "shoes": {},
+                "etc": {}
+            }
+        },
+        "soccer": {
+            "supplies": {},
+            "shoes": {},
+            "uniform": {}
+        },
+        "yoga": {
+            "woman": {
+                "top": {},
+                "outer": {},
+                "pants": {}
+            },
+            "supplies": {
+                "mat": {},
+                "etc": {},
+                "hat": {}
+            }
+        }
+    },
+    "kids": {
+        "girl": {
+            "shirtAndBlouse": {
+                "sleevelong": {},
+                "sleeveshort": {}
+            },
+            "neat": {
+                "cardigan": {},
+                "pullover": {}
+            },
+            "outer": {
+                "padding": {},
+                "jacket": {},
+                "jumper": {},
+                "coat": {}
+            },
+            "pantsAndSkirt": {
+                "long": {},
+                "short": {},
+                "skirt": {}
+            },
+            "tshirt": {
+                "sleeveshort": {},
+                "sleevelong": {}
+            },
+            "onepiece": {}
+        },
+        "boy": {
+            "shirt": {
+                "sleevelong": {},
+                "sleeveshort": {}
+            },
+            "neat": {
+                "cardigan": {},
+                "pullover": {}
+            },
+            "outer": {
+                "padding": {},
+                "jacket": {},
+                "jumper": {},
+                "coat": {}
+            },
+            "tshirt": {
+                "sleeveshort": {},
+                "sleevelong": {}
+            },
+            "pants": {
+                "long": {},
+                "short": {}
+            }
+        }
+    },
+    "man": {
+        "jacket": {
+            "jacket": {},
+            "blazer": {},
+            "vest": {},
+            "leatherJacket": {}
+        },
+        "shirt": {
+            "sleeveshort": {},
+            "sleevelong": {}
+        },
+        "neat": {
+            "pullover": {},
+            "vest": {},
+            "cardigan": {}
+        },
+        "outer": {
+            "padding": {},
+            "jumper": {
+                "windbreak": {},
+                "jumper": {},
+                "safari": {}
+            },
+            "leatherJacket": {},
+            "coat": {
+                "trench": {},
+                "coat": {}
+            }
+        },
+        "suit": {
+            "suitVest": {},
+            "suitJacket": {},
+            "suitPants": {},
+            "dressShirt": {},
+            "suitSet": {},
+            "setupSet": {}
+        },
+        "tshirt": {
+            "sleevelong": {},
+            "sleeveshort": {},
+            "sleeveless": {}
+        },
+        "pants": {
+            "jogger": {},
+            "slacks": {},
+            "suitPants": {},
+            "chinos": {},
+            "shorts": {},
+            "denim": {}
+        }
+    },
+    "luxury": {
+        "womanShoes": {
+            "sandal": {},
+            "slipper": {},
+            "slipon": {},
+            "heel": {},
+            "walker": {},
+            "flat": {},
+            "sneakers": {}
+        },
+        "womanWatch": {
+            "watch": {},
+            "bracelet": {},
+            "hairAccessory": {},
+            "necklace": {},
+            "brooch": {},
+            "earing": {},
+            "ring": {}
+        },
+        "man": {
+            "jacket": {
+                "jacket": {},
+                "blazer": {},
+                "vest": {},
+                "leatherJacket": {}
+            },
+            "shirt": {
+                "sleevelong": {},
+                "sleeveshort": {}
+            },
+            "neat": {
+                "pullover": {},
+                "vest": {},
+                "cardigan": {}
+            },
+            "outer": {
+                "padding": {},
+                "jumper": {},
+                "trench": {},
+                "coat": {}
+            },
+            "tshirt": {
+                "sleevelong": {},
+                "sleeveshort": {},
+                "sleeveless": {}
+            },
+            "beachwear": {
+                "etc": {},
+                "pants": {},
+                "swim": {}
+            },
+            "pants": {
+                "casualShort": {},
+                "suitPants": {},
+                "casualLong": {},
+                "denim": {},
+                "formal": {}
+            }
+        },
+        "manShoes": {
+            "slipper": {},
+            "sandal": {},
+            "shoes": {},
+            "slipon": {},
+            "walker": {},
+            "sneakers": {}
+        },
+        "woman": {
+            "jacketAndVest": {
+                "jacket": {},
+                "blazer": {},
+                "vest": {},
+                "leatherJacket": {}
+            },
+            "shirtAndBlouse": {
+                "shirtSleeveshort": {},
+                "blouseSleevelong": {},
+                "blouseSleeveshort": {},
+                "blouseSleeveless": {},
+                "shirtSleevelong": {}
+            },
+            "neat": {
+                "pullover": {},
+                "vest": {},
+                "cardigan": {}
+            },
+            "outer": {
+                "padding": {},
+                "jumper": {},
+                "trench": {},
+                "fur": {},
+                "coat": {}
+            },
+            "tshirt": {
+                "sleevelong": {},
+                "sleeveshort": {},
+                "sleeveless": {}
+            },
+            "onepiece": {
+                "sleeveshort": {},
+                "sleevelong": {}
+            },
+            "skirt": {
+                "long": {},
+                "short": {}
+            },
+            "beachwear": {
+                "etc": {},
+                "bikini": {},
+                "coverup": {},
+                "swimsuit": {}
+            },
+            "pants": {
+                "short": {},
+                "long": {}
+            }
+        },
+        "womanBag": {
+            "purse": {
+                "long": {},
+                "etc": {},
+                "mini": {},
+                "card": {}
+            },
+            "bag": {
+                "cross": {},
+                "tote": {},
+                "clutch": {},
+                "carrier": {},
+                "shopper": {},
+                "backpack": {}
+            }
+        },
+        "manBag": {
+            "purse": {
+                "long": {},
+                "half": {},
+                "moneyclip": {},
+                "keyholder": {},
+                "card": {},
+                "medium": {}
+            },
+            "bag": {
+                "tote": {},
+                "clutch": {},
+                "carrier": {},
+                "shoulder": {},
+                "briefcase": {},
+                "sling": {},
+                "backpack": {}
+            }
+        },
+        "manWatch": {
+            "jewerly": {},
+            "watch": {},
+            "etc": {}
+        }
+    }
+}
